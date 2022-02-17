@@ -4,6 +4,10 @@ body {
     background-color: rgba(30,30,30,255);
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     color: red;
     text-decoration: solid;
