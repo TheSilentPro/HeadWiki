@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    color: white;
+    background-color: rgba(30,30,30,255);
+}
+
+h1 {
+    color: red;
+    text-decoration: solid;
+}
+
+#desc {
+    text-decoration: underline;
+}
+
+.feature {
+    font-weight: bold;
+    text-decoration: solid;
+}
+
+.fdesc {
+    font-style: italic;
+}
