@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeadDB - 4.0.0</title>
+</head>
+<body>
+    <h1>4.0.0 - Rework</h1>
+    <hr>
+
+    <h2>Changes</h2>
+    <ul>
+        <li>Added support for Treasury.</li>
+        <li>Added currency support in the config.</li>
+        <li>The project will now follow <a href="https://semver.org">Semantic Versioning</a>.</li>
+        <li>The project will now have changelogs (this *may* not include patches).</li>
+    </ul>
+
+    <h2>Source Code Changes</h2>
+    <ul>
+        <li>Added <code>HeadSubCommand</code> for sub-commands.</li>
+        <li>Added all sub-commands to their respective classes.</li>
+        <li>Renamed <code>HeadDatabase#updateAsync</code> to <code>HeadDatabase#update</code>.</li>
+        <li>Renamed <code>HeadDatbase#getHeadsNoCacheAsync</code> to <code>HeadDatabase#getHeadsNoCache</code>>.</li>
+        <li>Renamed <code>CommandHeadDB</code> to <code>HeadDBCommand</code>.</li>
+        <li>Renamed <code>HEconomyProvider</code> to <code>BasicEconomyProvider</code>.</li>
+        <li>Moved <code>event</code> classes to <code>api/event</code>.</li>
+        <li>Moved <code>database</code> classes to <code>implementation</code>.</li>
+        <li>Moved <code>Head</code> and <code>LocalHead</code> to implementation.</li>
+        <li>HeadAPI will now use streams to filter results.</li>
+        <li>Return unmodifiable list of <code>HeadDatbase#getHeads(category)</code>.</li>
+        <li>Payments are now handled asynchronously (Additionally, users will now receive a "purchasing..." message).</li>
+        <li>Utils now has a <code>async(task)</code> method.</li>
+        <li>From now on new additions to the source code *should* be documented with the <code>@since &lt;version&gt;</code> tag.</li>
+        <li>Javadocs will now be available <a href="https://javadocs.pages.dev">here</a>.</li>
+    </ul>
+</body>
+</html>
